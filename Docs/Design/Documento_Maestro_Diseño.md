@@ -58,6 +58,7 @@ Para jugar con amigos usamos un sistema de "Room Code" (estilo Among Us), muy ba
 ## 8. DIRECCIÓN DE ARTE Y SONIDO
 - **Cámara y Modelos:** Vista Isométrica 3D. Tanto los personajes como los muebles deben ser modelos 3D reales, lo que permite que tengan **dirección (hacia dónde miran)**, algo vital para las mecánicas de línea de visión.
 - **Estética "Isometric Toy-Box" (Maqueta / Claymation):** El nivel parece una preciosa maqueta táctil (estilo madera pulida, arcilla o plastilina). Ideal para que lo genere una IA de forma hiper-consistente. Es colorido y apto para todas las edades.
+- **Temáticas de Personajes (Multiverso):** No nos cerramos a un solo estilo. Habrá niveles de todo tipo. Desde personas "normales" (estilo Murdoku clásico), hasta animales antropomórficos, fantasía o ciencia ficción, permitiendo una variedad infinita de "casos" y cosméticos.
 - **Interacción y "Game Feel":** La interfaz debe ser extremadamente jugosa (juicy). 
   - Al seleccionar un personaje o mueble, debe tener una pequeña animación de "pop" o rebote.
   - Al arrastrar a una persona, la animación debe simular que lo estás **levantando por la cabeza o el cuello (scruff)**, dejando que su cuerpecito y piernas cuelguen y se balanceen hacia los lados por la inercia del movimiento.
