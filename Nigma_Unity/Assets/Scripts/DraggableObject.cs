@@ -13,6 +13,23 @@ namespace Nigma.Core
         private Vector3 startPos;
         private Camera mainCamera;
         
+        [Header("Object Type")]
+        [Tooltip("Defines the optical behavior of this object in the VisionRaycaster.")]
+        public FurnitureType furnitureType = FurnitureType.Sofa;
+
+        [Header("Character Settings")]
+        [Tooltip("If true, this character/object is short and can pass through Plant line-of-sight.")]
+        public bool isShortCharacter = false;
+
+        [Header("Camera Settings (FurnitureType.Camera only)")]
+        [Tooltip("Half-angle of the camera's vision cone in degrees.")]
+        [Range(10f, 90f)]
+        public float cameraVisionAngle = 45f;
+
+        [Header("Fan Settings (FurnitureType.Fan only)")]
+        [Tooltip("Direction the fan blows. Moves curtains tagged 'Curtain' in this direction.")]
+        public Vector3 fanBlowDirection = Vector3.right;
+
         [Header("Game Feel Settings")]
         [Tooltip("How high the object lifts when dragged (simulating picking up by the scruff)")]
         public float liftHeight = 1.5f;

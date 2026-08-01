@@ -10,6 +10,11 @@ namespace Nigma.Core
         public int height = 4;
         public float cellSize = 2f;
 
+        [Header("Prefabs")]
+        public GameObject structuralWallPrefab;
+        
+        private List<GameObject> spawnedWalls = new List<GameObject>();
+
         // Represents a tile on the board
         public class GridNode
         {
@@ -44,6 +49,41 @@ namespace Nigma.Core
                         occupant = null,
                         isStructuralWall = false // Set this via level generation later
                     };
+                }
+            }
+        }
+
+        public void ClearGrid()
+        {
+            for (int x = 0; x < width; x++)
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    if (grid[x, y] != null)
+                    {
+                        grid[x, y].occupant = null;
+                        grid[x, y].isStructuralWall = false;
+                    }
+                }
+            }
+
+            foreach (var wall in spawnedWalls)
+            {
+                if (wall != null) Destroy(wall);
+            }
+            spawnedWalls.Clear();
+        }
+
+        public void SpawnStructuralWall(int x, int y)
+        {
+            if (IsValidNode(x, y))
+            {
+                grid[x, y].isStructuralWall = true;
+                if (structuralWallPrefab != null)
+                {
+                    Vector3 pos = GetWorldPosition(x, y);
+                    GameObject wall = Instantiate(structuralWallPrefab, pos, Quaternion.identity, this.transform);
+                    spawnedWalls.Add(wall);
                 }
             }
         }

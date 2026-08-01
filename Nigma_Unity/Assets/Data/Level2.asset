@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207604e058fefc3469e61150f476e4c4, type: 3}
+  m_Name: Level2
+  m_EditorClassIdentifier: Assembly-CSharp::Nigma.Core.LevelData
+  levelID: 2
+  puzzleDescription: "\U0001F50E CASO 2: \xABEl Robo en la Galer\xEDa\xBB\n\nEsta
+    noche han robado el cuadro m\xE1s valioso del museo.\nEl vigilante B\xFAho asegura
+    que vigilaba desde el pasillo con l\xEDnea de visi\xF3n directa.\nLa directora
+    Lechuza se\xF1ala que hay un espejo en la sala que desviaba su vista.\nEl ladr\xF3n
+    aprovech\xF3 ese \xE1ngulo muerto.\n\n\xBFEn qu\xE9 casilla estaba el cuadro
+    cuando lo cogieron?\n(El muro gris bloquea el acceso. Usa el Espejo para reconstruir
+    el \xE1ngulo del B\xFAho)"
+  correctAnswer: {x: 2, y: 3}
+  availableMirrors: 1
+  availableSofas: 1
+  availableCameras: 0
+  availableLamps: 0
+  availablePlants: 0
+  availableFans: 0
+  structuralWalls:
+  - {x: 1, y: 1}
+  permanentMirrors: []
+  permanentCameras: []
+  permanentFans: []
+  isLightRequired: 0
+  multiplayerClueFragments: []
+  safeCode: 23
+  safeHint: "\U0001F512 C\xF3digo = Coordenada X de la soluci\xF3n seguida de Y (dos
+    d\xEDgitos)"

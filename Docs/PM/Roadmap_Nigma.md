@@ -1,5 +1,5 @@
 # 🗺️ Roadmap y Tracker de Proyecto: NIGMA (Visual Murdoku)
-*Documento de Gestión de Proyecto (PM) - Actualizado: 01/08/2026*
+*Documento de Gestión de Proyecto (PM) - Actualizado: 01/08/2026 — Fase 4 completada*
 
 Este documento actúa como la hoja de ruta central para el desarrollo de Nigma, el juego de deducción lógica visual.
 
@@ -17,20 +17,29 @@ Este documento actúa como la hoja de ruta central para el desarrollo de Nigma, 
 - [x] Programar el sistema de Raycast de Línea de Visión (óptica) que valide si hay muros o espejos.
 - [x] Programar el GameManager con 1 caso de prueba "Hardcodeado" y el botón "Resolver".
 
-## Fase 3: Vertical Slice (Prototipo Jugable Completo)
-- [ ] Conectar los scripts en el Editor de Unity (Asignar variables públicas, crear Prefabs de Muros y Espejos).
-- [ ] Implementar la interfaz visual (UI) para el "Atestado Textual" y el Maletín.
-- [ ] Crear el sistema de inventario limitado por nivel.
-- [ ] Diseñar y hardcodear los primeros 3-5 puzzles reales para probar la curva de dificultad.
-- [ ] Sistema de Candado (Caja Fuerte Meta-puzzle) integrado en la UI.
-- [ ] Integrar Jokers y sistema de Puntuación/Multiplicadores (que alteren el meta-juego, no la física).
+## Fase 3: Vertical Slice (Prototipo Jugable Completo) ✅
+- [x] Conectar los scripts en el Editor de Unity (script automático `Phase3Setup.cs`).
+- [x] Implementar la interfaz visual (UI) para el "Atestado Textual" y el Maletín (`UIManager.cs`).
+- [x] Crear el sistema de inventario limitado por nivel (`LevelData.cs` con mirrors/sofas/cameras...).
+- [x] Diseñar y hardcodear los primeros 3 puzzles reales (`PuzzleGenerator.cs` → Nivel 1-3 con atestados narrativos).
+- [x] Sistema de Candado (Caja Fuerte Meta-puzzle) integrado en la UI (`SafeManager.cs`).
+- [x] Integrar Jokers y sistema de Puntuación/Multiplicadores (`JokerManager.cs` con Lupa Antigua x3).
 
-## Fase 4: Multijugador (Código de Sala) y Producción de Contenido
-- [ ] Ampliar la biblioteca de Herramientas y Objetos Físicos (Espejos, Muros, Cámaras).
-- [ ] Integración de red (Network) usando capa gratuita (ej. Unity Relay / Photon).
-- [ ] Programar el Lobby con sistema de "Room Code" (Código de 4 letras para unirse).
-- [ ] Programar el Modo **"Agencias Rivales"** (Carrera de velocidad sincrónica).
-- [ ] Programar el Modo **"Policía Corrupto"** (Distribución de pistas asimétrica a diferentes clientes).
+## Fase 4: Multijugador (Código de Sala) y Producción de Contenido ✅
+- [x] Ampliar la biblioteca de Herramientas y Objetos Físicos (Cámaras, Plantas, Ventiladores, Lámparas).
+  - Nuevo enum `FurnitureType.cs` con todos los tipos.
+  - `VisionRaycaster.cs` reescrito con lógica por tipo: cono de cámara, transparencia de planta, radio de lámpara, desplazamiento de ventilador.
+  - `LevelData.cs` ampliado con inventario Fase 4 y `multiplayerClueFragments`.
+- [x] Integración de red (Network) usando Unity Relay + Netcode for GameObjects.
+  - `NetworkBootstrapper.cs`: inicializa UGS + autenticación anónima.
+  - `RelayManager.cs`: crea/une asignaciones Relay; configura UnityTransport.
+- [x] Programar el Lobby con sistema de "Room Code" (Código de 4 letras para unirse).
+  - `LobbyManager.cs`: crea/une salas Unity Lobby; heartbeat; polling de jugadores.
+  - `LobbyUIController.cs`: UI de Lobby con reveal animado del código.
+- [x] Programar el Modo **"Agencias Rivales"** (Carrera de velocidad sincrónica).
+  - `AgenciasRivalesMode.cs`: timer local, penalización +30s, ranking via RPC.
+- [x] Programar el Modo **"Policía Corrupto"** (Distribución de pistas asimétrica a diferentes clientes).
+  - `PoliciaCorruptoMode.cs`: rol oculto, pistas falsas procedurales, votación via RPC.
 
 ## Fase 5: Monetización (Freemium), Pulido y Lanzamiento
 - [ ] Implementar In-App Purchases (Pago único de 4.99€ para desbloquear Premium).
