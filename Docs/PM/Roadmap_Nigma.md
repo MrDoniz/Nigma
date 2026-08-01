@@ -10,19 +10,20 @@ Este documento actúa como la hoja de ruta central para el desarrollo de Nigma, 
 - [x] **Diseño Lógico del Puzzle:** Definida la mecánica de "Escena Corrupta", progresión de muebles ópticos y condición de victoria.
 - [x] **Diseño Visual de Interfaz (Mockup):** Generado primer arte conceptual estilo "Isometric Toy-Box / Claymation".
 
-## Fase 2: Prototipo Técnico (Core Loop en Unity)
-- [ ] Configuración inicial de Unity (Repositorio, Settings Isométricos 3D/2D).
-- [ ] Crear el "Grid Manager" (Lógica subyacente de casillas espaciales).
-- [ ] Crear el sistema Drag & Drop de personajes y mobiliario con animaciones físicas (Dangling).
-- [ ] Programar el sistema de Raycast de Línea de Visión (óptica) que valide si hay muros o espejos.
-- [ ] Programar 1 caso de prueba "Hardcodeado" (Escena Corrupta fija) para comprobar que el loop es divertido.
+## Fase 2: Prototipo Técnico (Core Loop en Unity) - (Completada por IA, pendiente Setup Manual)
+- [x] Configuración inicial de Unity (Repositorio, Settings Isométricos 3D/2D). *(Pendiente de que el usuario lo abra)*
+- [x] Crear el "Grid Manager" (Lógica subyacente de casillas espaciales).
+- [x] Crear el sistema Drag & Drop de personajes y mobiliario con animaciones físicas (Dangling).
+- [x] Programar el sistema de Raycast de Línea de Visión (óptica) que valide si hay muros o espejos.
+- [x] Programar el GameManager con 1 caso de prueba "Hardcodeado" y el botón "Resolver".
 
 ## Fase 3: Vertical Slice (Prototipo Jugable Completo)
-- [ ] Sistema de Generación Procedural de Reglas (El cerebro del juego que crea casos matemáticamente perfectos).
-- [ ] Interfaz de Usuario (UI) para el Maletín y los "Jokers/Herramientas" (que multiplican puntuación o revelan pistas).
-- [ ] Sistema de Puntuación estilo Balatro (Chips x Mult) basado en el orden y velocidad de resolución.
-- [ ] Sistema de Candado (Caja Fuerte Meta-puzzle) integrado.
-- [ ] Arte temporal estilo "Cozy Mystery" (Misterio relajante, jazz, lluvia).
+- [ ] Conectar los scripts en el Editor de Unity (Asignar variables públicas, crear Prefabs de Muros y Espejos).
+- [ ] Implementar la interfaz visual (UI) para el "Atestado Textual" y el Maletín.
+- [ ] Crear el sistema de inventario limitado por nivel.
+- [ ] Diseñar y hardcodear los primeros 3-5 puzzles reales para probar la curva de dificultad.
+- [ ] Sistema de Candado (Caja Fuerte Meta-puzzle) integrado en la UI.
+- [ ] Integrar Jokers y sistema de Puntuación/Multiplicadores (que alteren el meta-juego, no la física).
 
 ## Fase 4: Multijugador (Código de Sala) y Producción de Contenido
 - [ ] Ampliar la biblioteca de Herramientas y Objetos Físicos (Espejos, Muros, Cámaras).
