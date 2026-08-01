@@ -17,10 +17,11 @@ Este documento consolida y detalla absolutamente todas las ideas clave, mecánic
 ## 2. MECÁNICA CENTRAL: LA ESCENA CORRUPTA (Líneas de Visión)
 Eres un detective investigando la escena de un crimen. La jugabilidad ya no consiste en empezar de cero, sino en corregir una habitación manipulada.
 1. **Los Elementos Estructurales (Fijos):** La habitación ya tiene paredes, ventanas y pilares fijos que no puedes mover. Son las "reglas físicas" inamovibles del nivel.
-2. **El Problema:** Como el Asesino miente, su testimonio provoca que el mapa inicial tenga errores geométricos y ópticos (ej. un personaje jura haber visto algo, pero hay un sofá estructural bloqueando, o un espejo mal orientado).
-3. **La Resolución (Drag & Drop):** Tienes muebles infinitos (sillas, sillones, mesas, espejos de pie). Debes mover y alterar este mobiliario por la habitación para que todas las líneas de visión encajen lógicamente.
-4. **La Victoria:** Ganas cuando al organizar el tablero logras dos cosas: Identificar la casilla exacta del asesinato (La Víctima) y descubrir qué testimonio era geométricamente imposible (El Asesino).
-5. **Catálogo de Mobiliario (Progresión):** En los niveles iniciales el jugador contará con pocos objetos para no abrumarse. A medida que avanza, se desbloquean mecánicas ópticas más complejas:
+2. **El Inventario Limitado:** Para evitar el caos en la pantalla del móvil, el jugador no tiene piezas infinitas. Recibe un inventario muy específico y limitado para cada nivel (ej. "En este caso dispones de 2 sillas y 1 espejo").
+3. **El Enigma (Texto Inicial):** Cada nivel arranca con una breve descripción textual o "Atestado Policial" que plantea las reglas lógicas y la pregunta final (Ej: "¿Dónde se encontraba la víctima?" o "¿Dónde escondieron el botín?"). 
+4. **La Reconstrucción (Scratchpad Físico):** El jugador usa el tablero y mueve los muebles como una herramienta de apoyo mental para deducir quién miente y cómo cuadran las líneas de visión. No hay "autocorrección" en tiempo real.
+5. **El Botón 'Resolver' (Condición de Victoria):** El juego no te avisa automáticamente. Da igual cómo hayas dejado los muebles desordenados por la habitación; cuando crees saber la respuesta, pulsas el botón "Resolver" y seleccionas la casilla exacta que responde a la pregunta del Enigma. Si aciertas la deducción, ganas.
+6. **Catálogo de Mobiliario (Progresión):** A medida que avanza la campaña, se desbloquean mecánicas ópticas más complejas:
    - *Sofás / Estanterías:* Bloquean la visión completamente.
    - *Espejos de pie:* Reflejan la línea de visión 90 grados.
    - *Lámparas de pie:* En niveles oscuros, revelan lo que esté en su haz de luz.
@@ -33,10 +34,10 @@ Eres un detective investigando la escena de un crimen. La jugabilidad ya no cons
 Para eliminar el uso de "cartas" pero mantener la aleatoriedad matemática y las sinergias adictivas:
 1. **El Maletín del Detective:** Aquí guardas tus objetos. No hay mazos.
 2. **Las Evidencias (Pistas):** Objetos de un solo uso que encuentras o ganas al resolver un caso rápido.
-3. **Las Herramientas (Los Jokers):** Objetos pasivos que modifican radicalmente cómo puntúas o cómo resuelves el puzzle.
-   - *Ejemplo de Herramienta Pasiva:* "Lupa Antigua" (Toda pista relacionada con la cocina te da x2 de puntuación).
-4. **La Sinergia (El Combo):** El núcleo adictivo del juego. Puedes arrastrar una Evidencia sobre una Herramienta para "forzar" el tablero.
-   - *Ejemplo de Combo:* Juntar la evidencia "Huella Dactilar" con la herramienta "Testigo Ocular" revela automáticamente a un asesino, ahorrándote 5 minutos de deducción lógica y multiplicando tus puntos. ¡Romper el juego usando tu ingenio está permitido y recompensado!
+3. **Las Herramientas (Los Jokers de Puntuación):** Objetos pasivos que modifican radicalmente tu meta-progresión o puntuación, **no las reglas físicas del tablero**.
+   - *Ejemplo de Herramienta Pasiva:* "Lupa Antigua" (Si resuelves el caso en menos de 2 minutos, tu puntuación final se multiplica x3).
+4. **La Sinergia (El Combo):** El núcleo adictivo del meta-juego. Puedes combinar evidencias obtenidas para maximizar tu recompensa al terminar el nivel.
+   - *Ejemplo de Combo:* Juntar la evidencia "Huella Dactilar" con la herramienta "Libreta de Notas" hace que al acertar la solución, ganes monedas premium adicionales para la Agencia, permitiéndote escalar en los modos Roguelite.
 
 ---
 
@@ -51,7 +52,8 @@ Para evitar complicar el juego con entornos 3D, el "toque" de escape room ocurre
 
 ## 5. ESTRUCTURA DE LA PARTIDA Y PROGRESIÓN
 - **Modo Freemium (Tutorial / Diario):** El juego base es gratuito. Incluye "El Caso del Día" (el mismo tablero para todos) y una Campaña Básica de 20 niveles "Hardcodeados" (hechos a mano para garantizar una curva de dificultad perfecta y enseñar las mecánicas ópticas de forma suave).
-- **El Run Infinito (Premium):** Al pagar 4.99€, desbloqueas el núcleo duro (Roguelite). Resuelves salas generadas proceduralmente (mutaciones de tableros base para asegurar solución única), eligiendo herramientas para potenciar tu Maletín.
+- **Progresión Inicial (100% Hardcodeado):** Para garantizar que el juego es divertido y lógicamente perfecto, **todos los puzles de la versión inicial estarán creados a mano**. La generación procedural infinita se descarta para el lanzamiento base, priorizando la calidad sobre la cantidad.
+- **El Run Infinito (Premium - Expansión Futura):** Al pagar 4.99€, desbloqueas paquetes de niveles premium (handcrafted) y nuevos modos de juego, con la posibilidad futura de añadir tableros generados proceduralmente una vez la fórmula base esté validada.
 
 ## 6. EL MODO MULTIJUGADOR (Código de Sala & Friend Pass)
 Para jugar con amigos usamos un sistema de "Room Code" (estilo Among Us), muy barato de mantener en servidores. 

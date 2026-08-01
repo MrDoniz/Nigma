@@ -16,17 +16,17 @@ El juego toma la estructura de **Línea de Visión (Puzles ópticos)**, añade l
 
 ### A. El Tablero Físico (La Escena Corrupta)
 El bucle de juego principal transforma al jugador en un investigador activo:
-- **La Llegada:** El nivel empieza con el grid (ej. 4x4) ya amueblado y con personajes colocados. Hay elementos estructurales FIJOS (paredes, pilares, ventanas) que no puedes mover. Esta disposición representa la "versión de los testimonios", pero está corrupta (ej. alguien afirma haber visto un mueble, pero hay un pilar en medio).
-- **La Reconstrucción (Progresión):** Empiezas con niveles sencillos y pocos objetos. Al avanzar, desbloqueas muebles con complejas físicas ópticas: sofás (bloquean visión), espejos de pie (doblan visión 90º), lámparas (iluminan una línea en la oscuridad), plantas (bloquean visión humana pero no animal) y ventiladores (mueven elementos como el humo). Debes arrastrar y mover este mobiliario por el tablero para que las líneas de visión cuadren con la lógica.
-- **La Resolución:** El juego no te dice cuándo terminas. Tú ganas la partida cuando, al recomponer la escena, logras identificar la casilla exacta del crimen (Víctima) y al único personaje cuyo testimonio era físicamente imposible (El Asesino).
+- **El Enigma Textual:** Cada nivel arranca con un texto o "Atestado Policial" que da contexto, testimonios y formula la pregunta final a resolver (ej. "¿Dónde estaba escondido el saco de regalos?").
+- **La Llegada:** El grid empieza amueblado y con personajes. Hay elementos estructurales FIJOS que no puedes mover. Esta disposición es "la versión de los testimonios", pero contiene mentiras.
+- **La Reconstrucción (Scratchpad):** Tienes un inventario limitado de muebles (no infinito) para mover y visualizar las líneas de visión físicas. Mover cosas sirve de apoyo mental, no hay autocorrección en tiempo real.
+- **La Resolución (El Botón 'Resolver'):** Da igual dónde dejes los muebles al final. El juego te pregunta la respuesta al Enigma inicial. Haces clic en "Resolver", señalas la casilla correcta y, si tu deducción mental usando el tablero fue correcta, ganas el caso.
 
-### B. El Toque Balatro (Aleatoriedad y Sinergias sin Cartas)
-En lugar de un mazo de cartas, tienes un **Maletín de Detective**. Durante el caso, obtienes "Fichas de Evidencia" y "Herramientas".
-- **Herramientas (Los Jokers):** Objetos pasivos que alteran las reglas a tu favor durante ese caso. 
-  *Ejemplo:* "Lupa antigua" (Toda pista relacionada con la cocina te da el doble de puntos de deducción).
-- **Evidencias (Sinergias):** Puedes combinar evidencias obtenidas para forzar el grid. 
-  *Ejemplo:* Si combinas la ficha "Huella Dactilar" + "Testigo Ocular", la sinergia revela inmediatamente al culpable de una fila entera. Construir estas sinergias es lo que permite al jugador avanzado "romper" el juego y hacer puntuaciones masivas (Chips x Mult).
-- **El Toque "Escape Room" (Meta-Puzzles):** Ocasionalmente encontrarás una "Caja Fuerte" que contiene una Herramienta muy potente, bloqueada por un candado de 3 dígitos. La combinación no está escondida por el escenario, sino que se deduce observando el propio tablero lógico que estás resolviendo (ej. "Nº de sospechosos en las esquinas" - "Casillas vacías en la fila superior"). Añade el subidón de un escape room sin complicar el desarrollo (es solo una interfaz UI de candado).
+### B. El Toque Balatro (Sinergias de Puntuación)
+En lugar de un mazo de cartas, tienes un **Maletín de Detective**. Obtienes "Evidencias" y "Herramientas" que alteran tu meta-progresión, NO las físicas del tablero.
+- **Herramientas (Los Jokers):** Objetos pasivos que alteran la puntuación o recompensas de ese caso. 
+  *Ejemplo:* "Lupa antigua" (Si resuelves el puzle en el primer intento, ganas el doble de puntos).
+- **Evidencias (Sinergias):** Puedes combinar evidencias para maximizar recompensas meta-juego.
+- **El Toque "Escape Room" (Meta-Puzzles):** Ocasionalmente encontrarás una "Caja Fuerte" que contiene una Herramienta legendaria, bloqueada por un candado de 3 dígitos cuya clave deduces observando el grid.
 
 ### C. El Toque Roguelite (La Estructura de la Partida)
 - **El Caso (El Run):** Consiste en interrogar sospechosos en varias "Salas" o niveles consecutivos. Cada sala resuelta te da a elegir una nueva Herramienta o Evidencia.
