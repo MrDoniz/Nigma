@@ -3,19 +3,19 @@
 
 Este documento actúa como la hoja de ruta central para el desarrollo de Nigma, el juego de deducción lógica visual.
 
-## Fase 1: Pre-Producción y Diseño (En Curso)
-- [x] Brainstorming y Selección de Core Concept (Visual Murdoku + Balatro)
-- [x] Definición de Nombre Oficial (Nigma)
-- [x] Creación del Documento Maestro (GDD) y purgado de conceptos obsoletos
-- [ ] **Diseño Lógico del Puzzle:** Determinar matemáticamente cómo generar y validar las pistas visuales (las reglas de "No adyacente", "Misma fila", etc.) para que los puzzles de 4x4 tengan solución única.
-- [ ] **Diseño Visual de Interfaz (Mockup):** Diseñar conceptualmente cómo se ve la pantalla principal (Tablero, Pistas Visuales en un lateral, Maletín de Herramientas debajo) sin texto.
+## Fase 1: Pre-Producción y Diseño (Completada)
+- [x] Brainstorming y Selección de Core Concept (Líneas de Visión + Físicas).
+- [x] Definición de Nombre Oficial (Nigma).
+- [x] Creación del Documento Maestro (GDD) y purgado de conceptos obsoletos.
+- [x] **Diseño Lógico del Puzzle:** Definida la mecánica de "Escena Corrupta", progresión de muebles ópticos y condición de victoria.
+- [x] **Diseño Visual de Interfaz (Mockup):** Generado primer arte conceptual estilo "Isometric Toy-Box / Claymation".
 
 ## Fase 2: Prototipo Técnico (Core Loop en Unity)
-- [ ] Configuración inicial de Unity (Repositorio, .gitignore, Settings 2D vertical).
-- [ ] Crear el "Grid Manager" (Lógica subyacente de casillas 4x4).
-- [ ] Crear el sistema Drag & Drop de las fichas (Sospechosos/Iconos).
-- [ ] Programar un intérprete visual de pistas (que el juego sepa evaluar si el jugador ha puesto al Perro al lado del Gato).
-- [ ] Programar 1 caso de prueba "Hardcodeado" (fijo) para comprobar que el loop es divertido.
+- [ ] Configuración inicial de Unity (Repositorio, Settings Isométricos 3D/2D).
+- [ ] Crear el "Grid Manager" (Lógica subyacente de casillas espaciales).
+- [ ] Crear el sistema Drag & Drop de personajes y mobiliario con animaciones físicas (Dangling).
+- [ ] Programar el sistema de Raycast de Línea de Visión (óptica) que valide si hay muros o espejos.
+- [ ] Programar 1 caso de prueba "Hardcodeado" (Escena Corrupta fija) para comprobar que el loop es divertido.
 
 ## Fase 3: Vertical Slice (Prototipo Jugable Completo)
 - [ ] Sistema de Generación Procedural de Reglas (El cerebro del juego que crea casos matemáticamente perfectos).
