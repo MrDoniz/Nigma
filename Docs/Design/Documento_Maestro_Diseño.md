@@ -16,9 +16,9 @@ Este documento consolida y detalla absolutamente todas las ideas clave, mecánic
 
 ## 2. MECÁNICA CENTRAL: LA ESCENA CORRUPTA (Líneas de Visión)
 Eres un detective investigando la escena de un crimen. La jugabilidad ya no consiste en empezar de cero, sino en corregir una habitación manipulada.
-1. **La Llegada:** El nivel empieza con el tablero (ej. 4x4 o 5x5) ya amueblado y con los sospechosos colocados. Esta disposición inicial representa "la versión oficial" del caso según los testimonios.
-2. **El Problema:** Como el Asesino miente, su testimonio provoca que el mapa inicial tenga errores geométricos y ópticos (ej. una planta tapando una ventana, o un espejo mal orientado).
-3. **La Resolución (Drag & Drop):** Tienes herramientas infinitas (muros, espejos). Debes mover y alterar el entorno físico para que todas las líneas de visión encajen lógicamente.
+1. **Los Elementos Estructurales (Fijos):** La habitación ya tiene paredes, ventanas y pilares fijos que no puedes mover. Son las "reglas físicas" inamovibles del nivel.
+2. **El Problema:** Como el Asesino miente, su testimonio provoca que el mapa inicial tenga errores geométricos y ópticos (ej. un personaje jura haber visto algo, pero hay un sofá estructural bloqueando, o un espejo mal orientado).
+3. **La Resolución (Drag & Drop):** Tienes muebles infinitos (sillas, sillones, mesas, espejos de pie). Debes mover y alterar este mobiliario por la habitación para que todas las líneas de visión encajen lógicamente.
 4. **La Victoria:** Ganas cuando al organizar el tablero logras dos cosas: Identificar la casilla exacta del asesinato (La Víctima) y descubrir qué testimonio era geométricamente imposible (El Asesino).
 
 ---
