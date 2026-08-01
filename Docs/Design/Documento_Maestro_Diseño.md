@@ -20,6 +20,12 @@ Eres un detective investigando la escena de un crimen. La jugabilidad ya no cons
 2. **El Problema:** Como el Asesino miente, su testimonio provoca que el mapa inicial tenga errores geométricos y ópticos (ej. un personaje jura haber visto algo, pero hay un sofá estructural bloqueando, o un espejo mal orientado).
 3. **La Resolución (Drag & Drop):** Tienes muebles infinitos (sillas, sillones, mesas, espejos de pie). Debes mover y alterar este mobiliario por la habitación para que todas las líneas de visión encajen lógicamente.
 4. **La Victoria:** Ganas cuando al organizar el tablero logras dos cosas: Identificar la casilla exacta del asesinato (La Víctima) y descubrir qué testimonio era geométricamente imposible (El Asesino).
+5. **Catálogo de Mobiliario (Progresión):** En los niveles iniciales el jugador contará con pocos objetos para no abrumarse. A medida que avanza, se desbloquean mecánicas ópticas más complejas:
+   - *Sofás / Estanterías:* Bloquean la visión completamente.
+   - *Espejos de pie:* Reflejan la línea de visión 90 grados.
+   - *Lámparas de pie:* En niveles oscuros, revelan lo que esté en su haz de luz.
+   - *Plantas de interior:* Bloquean la visión humana, pero permiten ver a través a personajes bajos (mascotas, robots).
+   - *Ventiladores:* Desplazan cortinas o humo en una dirección específica.
 
 ---
 

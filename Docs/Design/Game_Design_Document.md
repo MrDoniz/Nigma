@@ -17,7 +17,7 @@ El juego toma la estructura de **Línea de Visión (Puzles ópticos)**, añade l
 ### A. El Tablero Físico (La Escena Corrupta)
 El bucle de juego principal transforma al jugador en un investigador activo:
 - **La Llegada:** El nivel empieza con el grid (ej. 4x4) ya amueblado y con personajes colocados. Hay elementos estructurales FIJOS (paredes, pilares, ventanas) que no puedes mover. Esta disposición representa la "versión de los testimonios", pero está corrupta (ej. alguien afirma haber visto un mueble, pero hay un pilar en medio).
-- **La Reconstrucción:** Tienes muebles infinitos (sillas, sillones, mesas altas, espejos). Debes arrastrar y mover este mobiliario por el tablero para que las líneas de visión físicas (óptica espacial) cuadren con la lógica de los testimonios.
+- **La Reconstrucción (Progresión):** Empiezas con niveles sencillos y pocos objetos. Al avanzar, desbloqueas muebles con complejas físicas ópticas: sofás (bloquean visión), espejos de pie (doblan visión 90º), lámparas (iluminan una línea en la oscuridad), plantas (bloquean visión humana pero no animal) y ventiladores (mueven elementos como el humo). Debes arrastrar y mover este mobiliario por el tablero para que las líneas de visión cuadren con la lógica.
 - **La Resolución:** El juego no te dice cuándo terminas. Tú ganas la partida cuando, al recomponer la escena, logras identificar la casilla exacta del crimen (Víctima) y al único personaje cuyo testimonio era físicamente imposible (El Asesino).
 
 ### B. El Toque Balatro (Aleatoriedad y Sinergias sin Cartas)
