@@ -14,13 +14,11 @@ El juego toma la estructura de **Línea de Visión (Puzles ópticos)**, añade l
 
 ## 3. Mecánicas Principales (Core Mechanics)
 
-### A. El Tablero Físico (Líneas de Visión)
-- El crimen se resuelve en un grid (ej. 4x4) usando lógica espacial y óptica, **sin pistas de texto**.
-- Las reglas de lógica son visuales y físicas. Para resolver el puzle, conectas líneas de visión entre personajes.
-  - *Ejemplo visual:* `[Ojo Abuela] ➡️ [Arma]` (La Abuela pudo ver el Arma en línea recta).
-  - *Ejemplo visual:* `[Perro] ❌👁️ [Gato]` (El Perro NO pudo ver al Gato, por lo que debe haber un muro entre ellos).
-- Para resolverlo, el jugador debe colocar no solo Sospechosos, sino **Objetos Físicos** en el grid: Muros (que bloquean la visión) y Espejos (que doblan la visión 90º).
-- **Lenguaje Universal:** Al no haber texto ni reglas lógicas abstractas de "Murdoku", el puzle se vuelve físico, inmediato y con una profundidad increíble.
+### A. El Tablero Físico (La Escena Corrupta)
+El bucle de juego principal transforma al jugador en un investigador activo:
+- **La Llegada:** El nivel empieza con el grid (ej. 4x4) ya amueblado y con personajes colocados. Esta disposición representa la "versión de los testimonios", pero está corrupta (contiene mentiras del asesino, como un espejo apuntando mal).
+- **La Reconstrucción:** Tienes piezas infinitas (muros, espejos, plantas). Debes arrastrar y mover los objetos por el tablero para que las líneas de visión físicas (óptica espacial) cuadren con la lógica.
+- **La Resolución:** El juego no te dice cuándo terminas. Tú ganas la partida cuando, al recomponer la escena, logras identificar la casilla exacta del crimen (Víctima) y al único personaje cuyo testimonio era físicamente imposible (El Asesino).
 
 ### B. El Toque Balatro (Aleatoriedad y Sinergias sin Cartas)
 En lugar de un mazo de cartas, tienes un **Maletín de Detective**. Durante el caso, obtienes "Fichas de Evidencia" y "Herramientas".
@@ -47,6 +45,6 @@ Para maximizar la viralidad y ahorrar costes de servidor, el multijugador funcio
 - **Policía Corrupto (Roles Ocultos):** El juego genera un grid gigante. **Las pistas se reparten entre los móviles de los jugadores**. Tenéis que hablar para resolverlo en equipo. El giro: Uno de los amigos es el "Corrupto" (tiene pistas falsas) y debe intentar sabotear el puzzle convenciendo a los demás de colocar mal las piezas sin ser descubierto.
 
 ## 6. Estilo Visual y Sonoro
-- **Estilo Visual:** Isométrico o Top-Down 2D muy pulido. Paleta de colores cálida (madera, lámparas de escritorio, papel antiguo). Los personajes son carismáticos y exagerados.
+- **Estilo Visual:** Isométrico 3D estilo "Maqueta de Juguete" (Toy-box / Claymation). Muy amigable, hiper-colorido y táctil, ideal para atraer tanto a niños como a adultos. Además, permite variaciones estacionales muy fáciles (nieve para Navidad, calabazas para Halloween).
 - **Interfaz (UI):** Táctil, de arrastrar y soltar (Drag & Drop). Colocar un sospechoso en el tablero debe sentirse satisfactorio, con buenos efectos de sonido de papel y sellos.
 - **Sonido:** Jazz suave, lo-fi de misterio, sonido de lluvia de fondo. Muy relajante para pensar.

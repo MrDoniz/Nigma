@@ -14,15 +14,12 @@ Este documento consolida y detalla absolutamente todas las ideas clave, mecánic
 
 ---
 
-## 2. MECÁNICA CENTRAL: LÍNEA DE VISIÓN (Puzle Óptico-Lógico)
-Eres un detective frente a un tablero de 4x4 (o 3x3 en niveles iniciales). Hemos eliminado las reglas tradicionales y limitantes de los sudokus/murdokus. Aquí la deducción es física y espacial: **La Línea de Visión**.
-1. **Los Elementos:** Tienes Personajes (víctimas, asesinos, testigos) y Objetos Físicos (Muros, Espejos, Cámaras).
-2. **El Objetivo:** Colocar todo en el tablero para que las "Líneas de Visión" cuadren con las declaraciones (sin leer texto, todo visual).
-3. **Las Mecánicas Ópticas:**
-   - *Visión Directa:* `[Testigo] ➡️ [Arma]` (Deben estar en línea recta sin obstáculos).
-   - *Bloqueo:* `[Viuda] ❌👁️ [Mayordomo]` (Debe haber un Muro entre ellos para bloquear la línea de visión).
-   - *Refracción:* `[Perro] ➡️ [Espejo] ⬇️ [Arma]` (Los espejos doblan la visión 90º).
-Este giro transforma el juego de un simple sudoku a un puzle espacial infinito, donde rebotar la visión y bloquear líneas crea una profundidad jugable inmensa.
+## 2. MECÁNICA CENTRAL: LA ESCENA CORRUPTA (Líneas de Visión)
+Eres un detective investigando la escena de un crimen. La jugabilidad ya no consiste en empezar de cero, sino en corregir una habitación manipulada.
+1. **La Llegada:** El nivel empieza con el tablero (ej. 4x4 o 5x5) ya amueblado y con los sospechosos colocados. Esta disposición inicial representa "la versión oficial" del caso según los testimonios.
+2. **El Problema:** Como el Asesino miente, su testimonio provoca que el mapa inicial tenga errores geométricos y ópticos (ej. una planta tapando una ventana, o un espejo mal orientado).
+3. **La Resolución (Drag & Drop):** Tienes herramientas infinitas (muros, espejos). Debes mover y alterar el entorno físico para que todas las líneas de visión encajen lógicamente.
+4. **La Victoria:** Ganas cuando al organizar el tablero logras dos cosas: Identificar la casilla exacta del asesinato (La Víctima) y descubrir qué testimonio era geométricamente imposible (El Asesino).
 
 ---
 
@@ -60,7 +57,7 @@ Para jugar con amigos usamos un sistema de "Room Code" (estilo Among Us), muy ba
 
 ## 8. DIRECCIÓN DE ARTE Y SONIDO
 - **Cámara:** 2D, Vista Isométrica o Cenital (Top-Down).
-- **Estética "Cozy Mystery" (Misterio Acogedor):** Colores cálidos de madera, flexos, lluvia cayendo en la ventana, tazas de café, fichas de sospechosos con fotos polaroid o dibujos caricaturescos limpios.
+- **Estética "Isometric Toy-Box" (Maqueta / Claymation):** Vista isométrica 3D. El nivel parece una preciosa maqueta táctil (estilo madera pulida, arcilla o plastilina). Ideal para que lo genere una IA de forma hiper-consistente. Es colorido, apto para todas las edades (7 a 60 años) y permite adaptar estacionalmente el arte muy fácil (añadir nieve, calabazas).
 - **Sonido (Sensación Táctil - ASMR):** Poner una ficha en el tablero tiene que sonar a un golpe de sello en papel duro ("¡CLAC!"). Acompañado de música Jazz suave de fondo o Lofi Mystery.
 
 ---
