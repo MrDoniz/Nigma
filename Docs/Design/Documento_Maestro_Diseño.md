@@ -56,9 +56,12 @@ Para jugar con amigos usamos un sistema de "Room Code" (estilo Among Us), muy ba
 ---
 
 ## 8. DIRECCIÓN DE ARTE Y SONIDO
-- **Cámara:** 2D, Vista Isométrica o Cenital (Top-Down).
-- **Estética "Isometric Toy-Box" (Maqueta / Claymation):** Vista isométrica 3D. El nivel parece una preciosa maqueta táctil (estilo madera pulida, arcilla o plastilina). Ideal para que lo genere una IA de forma hiper-consistente. Es colorido, apto para todas las edades (7 a 60 años) y permite adaptar estacionalmente el arte muy fácil (añadir nieve, calabazas).
-- **Sonido (Sensación Táctil - ASMR):** Poner una ficha en el tablero tiene que sonar a un golpe de sello en papel duro ("¡CLAC!"). Acompañado de música Jazz suave de fondo o Lofi Mystery.
+- **Cámara y Modelos:** Vista Isométrica 3D. Tanto los personajes como los muebles deben ser modelos 3D reales, lo que permite que tengan **dirección (hacia dónde miran)**, algo vital para las mecánicas de línea de visión.
+- **Estética "Isometric Toy-Box" (Maqueta / Claymation):** El nivel parece una preciosa maqueta táctil (estilo madera pulida, arcilla o plastilina). Ideal para que lo genere una IA de forma hiper-consistente. Es colorido y apto para todas las edades.
+- **Interacción y "Game Feel":** La interfaz debe ser extremadamente jugosa (juicy). 
+  - Al seleccionar un personaje o mueble, debe tener una pequeña animación de "pop" o rebote.
+  - Al arrastrar a una persona, la animación debe simular que lo estás **levantando por la cabeza o el cuello (scruff)**, dejando que su cuerpecito y piernas cuelguen y se balanceen hacia los lados por la inercia del movimiento.
+- **Sonido (Sensación Táctil - ASMR):** Soltar un mueble o personaje en el tablero tiene que sonar a un golpe de madera hueca o pieza de ajedrez ("¡CLAC!"). Acompañado de música Jazz suave de fondo.
 
 ---
 *Nota de Desarrollo: Cualquier idea nueva, mecánica o recorte, lo iremos registrando y comentando en este documento o en archivos similares dentro de esta carpeta del repositorio.*
