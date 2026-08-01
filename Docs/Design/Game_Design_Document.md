@@ -10,17 +10,17 @@
 ## 2. Concepto Principal (Core Concept)
 > Eres un detective que resuelve crímenes autogenerados en un tablero (Grid). Cada partida es un caso distinto. No hay muerte permanente frustrante; el toque roguelike se centra en que cada nivel es independiente, con generación procedural, y tu éxito te permite desbloquear mejores herramientas y cosméticos para tu agencia de detectives.
 
-El juego toma la estructura lógica de **Murdoku** (quién estaba dónde), añade las **sinergias explosivas y aleatoriedad de Balatro** (combinando herramientas y evidencias para multiplicar tu eficiencia), y se prepara para un futuro **social de engaño y negociación** inspirado en juegos de mesa.
+El juego toma la estructura de **Línea de Visión (Puzles ópticos)**, añade las **sinergias explosivas y aleatoriedad de Balatro** (combinando herramientas y evidencias para multiplicar tu eficiencia), y se prepara para un futuro **social de engaño y negociación** inspirado en juegos de mesa.
 
 ## 3. Mecánicas Principales (Core Mechanics)
 
-### A. El Tablero de Deducción Visual (Líneas de Visión)
-- El crimen se resuelve en un grid (ej. 4x4) usando lógica pura estilo Murdoku, pero **sin pistas de texto**.
-- Las reglas de lógica son visuales y espaciales. En lugar de reglas abstractas, usas "Líneas de Visión".
+### A. El Tablero Físico (Líneas de Visión)
+- El crimen se resuelve en un grid (ej. 4x4) usando lógica espacial y óptica, **sin pistas de texto**.
+- Las reglas de lógica son visuales y físicas. Para resolver el puzle, conectas líneas de visión entre personajes.
   - *Ejemplo visual:* `[Ojo Abuela] ➡️ [Arma]` (La Abuela pudo ver el Arma en línea recta).
-  - *Ejemplo visual:* `[Perro] ❌👁️ [Gato]` (El Perro NO pudo ver al Gato).
+  - *Ejemplo visual:* `[Perro] ❌👁️ [Gato]` (El Perro NO pudo ver al Gato, por lo que debe haber un muro entre ellos).
 - Para resolverlo, el jugador debe colocar no solo Sospechosos, sino **Objetos Físicos** en el grid: Muros (que bloquean la visión) y Espejos (que doblan la visión 90º).
-- **Lenguaje Universal:** Al no haber texto, el juego es rapidísimo de jugar en móvil, y la lógica espacial de los láseres/espejos le da una profundidad visual increíble.
+- **Lenguaje Universal:** Al no haber texto ni reglas lógicas abstractas de "Murdoku", el puzle se vuelve físico, inmediato y con una profundidad increíble.
 
 ### B. El Toque Balatro (Aleatoriedad y Sinergias sin Cartas)
 En lugar de un mazo de cartas, tienes un **Maletín de Detective**. Durante el caso, obtienes "Fichas de Evidencia" y "Herramientas".

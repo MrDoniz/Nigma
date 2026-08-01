@@ -14,14 +14,15 @@ Este documento consolida y detalla absolutamente todas las ideas clave, mecánic
 
 ---
 
-## 2. MECÁNICA CENTRAL: EL GRID DE DEDUCCIÓN VISUAL (Cero Texto)
-Eres un detective frente a un tablero de 4x4 (o 3x3 en niveles iniciales). El gran giro para que sea un juego rápido de móvil (bombazo diario) es que **no hay texto que leer**.
-1. **Los Sospechosos:** Tienes 16 fichas visuales (caras carismáticas o iconos).
-2. **El Objetivo:** Arrastrar (Drag & Drop) a cada sospechoso a su casilla correcta.
-3. **Las Reglas Visuales:** El juego genera las pistas mediante bloques de iconos. 
-   - Ej: `[Abuela] ↔️ [Gato]` (Deben estar al lado).
-   - Ej: `[Cocinero] ❌ 🟩` (No puede ir en las casillas verdes/borde).
-Esta barrera de cero-texto hace que resolver el puzzle sea pura lógica geométrica y matemática, dando una sensación de dopamina inmediata sin frenar el ritmo de juego.
+## 2. MECÁNICA CENTRAL: LÍNEA DE VISIÓN (Puzle Óptico-Lógico)
+Eres un detective frente a un tablero de 4x4 (o 3x3 en niveles iniciales). Hemos eliminado las reglas tradicionales y limitantes de los sudokus/murdokus. Aquí la deducción es física y espacial: **La Línea de Visión**.
+1. **Los Elementos:** Tienes Personajes (víctimas, asesinos, testigos) y Objetos Físicos (Muros, Espejos, Cámaras).
+2. **El Objetivo:** Colocar todo en el tablero para que las "Líneas de Visión" cuadren con las declaraciones (sin leer texto, todo visual).
+3. **Las Mecánicas Ópticas:**
+   - *Visión Directa:* `[Testigo] ➡️ [Arma]` (Deben estar en línea recta sin obstáculos).
+   - *Bloqueo:* `[Viuda] ❌👁️ [Mayordomo]` (Debe haber un Muro entre ellos para bloquear la línea de visión).
+   - *Refracción:* `[Perro] ➡️ [Espejo] ⬇️ [Arma]` (Los espejos doblan la visión 90º).
+Este giro transforma el juego de un simple sudoku a un puzle espacial infinito, donde rebotar la visión y bloquear líneas crea una profundidad jugable inmensa.
 
 ---
 
