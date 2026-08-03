@@ -13,14 +13,9 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: Assembly-CSharp::Nigma.Core.LevelData
   levelID: 1
-  puzzleDescription: "\U0001F50E CASO 1: \xABLa Tarta Desaparecida\xBB\n\nLa se\xF1ora
-    Miau dej\xF3 su tarta en la cocina y al volver la encontr\xF3 a medias.\nEl Gato
-    jura que estaba en el sof\xE1 y vio perfectamente la cocina todo el tiempo.\nPero
-    el Perro insiste que el sof\xE1 bloqueaba la vista hacia el lado derecho.\n\n\xBFEn
-    qu\xE9 casilla estaba la tarta cuando desapareci\xF3?\n(Coloca el Sof\xE1 en
-    la casilla central y deduce la l\xEDnea de visi\xF3n del Gato)"
-  correctAnswer: {x: 3, y: 1}
-  availableMirrors: 0
+  puzzleDescription: "Acertijo 1 (F\xE1cil): \xBFD\xF3nde est\xE1 la tarta?"
+  correctAnswer: {x: 1, y: 1}
+  availableMirrors: 1
   availableSofas: 1
   availableCameras: 0
   availableLamps: 0

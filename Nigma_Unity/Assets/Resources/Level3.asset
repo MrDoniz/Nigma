@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207604e058fefc3469e61150f476e4c4, type: 3}
+  m_Name: Level3
+  m_EditorClassIdentifier: Assembly-CSharp::Nigma.Core.LevelData
+  levelID: 3
+  puzzleDescription: "\U0001F50E CASO 3: \xABEl Testigo Ciego\xBB\n\nRobo con violencia
+    en el piso 3. Dos testigos que se contradicen.\nLa Zorra jura haber visto al
+    culpable cruzar el pasillo central a plena luz.\nEl Conejo dice que los dos muros
+    laterales lo hacen imposible: \xE1ngulo muerto total.\nLos espejos pod\xEDan
+    reflejar la visi\xF3n... o precisamente ocultarla.\n\n\xBFEn qu\xE9 casilla estaba
+    el sospechoso cuando fue visto?\n(Coloca los 2 Espejos para reconstruir la cadena
+    de reflexi\xF3n posible de la Zorra)"
+  correctAnswer: {x: 1, y: 3}
+  availableMirrors: 2
+  availableSofas: 1
+  availableCameras: 0
+  availableLamps: 0
+  availablePlants: 0
+  availableFans: 0
+  structuralWalls:
+  - {x: 0, y: 2}
+  - {x: 3, y: 2}
+  permanentMirrors: []
+  permanentCameras: []
+  permanentFans: []
+  isLightRequired: 0
+  multiplayerClueFragments: []
+  safeCode: 
+  safeHint: 

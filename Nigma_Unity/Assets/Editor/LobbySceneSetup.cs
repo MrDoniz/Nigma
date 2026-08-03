@@ -9,7 +9,7 @@ namespace Nigma.Editor
 {
     public class LobbySceneSetup
     {
-        [MenuItem("Nigma/Configuración Automática/1. Crear Escena de Lobby", false, 1)]
+        [MenuItem("Nigma/0. Crear Escena de Lobby", false, 1)]
         public static void CreateLobbyScene()
         {
             // 1. Create a new empty scene
@@ -52,7 +52,7 @@ namespace Nigma.Editor
             // Create EventSystem
             GameObject eventSystemObj = new GameObject("EventSystem");
             eventSystemObj.AddComponent<EventSystem>();
-            eventSystemObj.AddComponent<StandaloneInputModule>();
+            eventSystemObj.AddComponent<UnityEngine.InputSystem.UI.InputSystemUIInputModule>();
 
             // Attach LobbyUIController
             LobbyUIController uiController = canvasObj.AddComponent<LobbyUIController>();
@@ -193,7 +193,7 @@ namespace Nigma.Editor
             txtRect.offsetMax = Vector2.zero;
             Text txt = txtObj.AddComponent<Text>();
             txt.text = text;
-            txt.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             txt.alignment = TextAnchor.MiddleCenter;
             txt.color = Color.white;
             txt.fontSize = 20;
@@ -211,7 +211,7 @@ namespace Nigma.Editor
             
             Text txt = txtObj.AddComponent<Text>();
             txt.text = text;
-            txt.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             txt.color = Color.white;
             txt.fontSize = fontSize;
             return txt;
@@ -237,7 +237,7 @@ namespace Nigma.Editor
             textRect.offsetMin = new Vector2(10, 0);
             textRect.offsetMax = new Vector2(-10, 0);
             Text text = textObj.AddComponent<Text>();
-            text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             text.color = Color.black;
             text.fontSize = 24;
             text.alignment = TextAnchor.MiddleCenter;

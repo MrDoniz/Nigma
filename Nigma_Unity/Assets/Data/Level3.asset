@@ -13,23 +13,15 @@ MonoBehaviour:
   m_Name: Level3
   m_EditorClassIdentifier: Assembly-CSharp::Nigma.Core.LevelData
   levelID: 3
-  puzzleDescription: "\U0001F50E CASO 3: \xABEl Testigo Ciego\xBB\n\nRobo con violencia
-    en el piso 3. Dos testigos que se contradicen.\nLa Zorra jura haber visto al
-    culpable cruzar el pasillo central a plena luz.\nEl Conejo dice que los dos muros
-    laterales lo hacen imposible: \xE1ngulo muerto total.\nLos espejos pod\xEDan
-    reflejar la visi\xF3n... o precisamente ocultarla.\n\n\xBFEn qu\xE9 casilla estaba
-    el sospechoso cuando fue visto?\n(Coloca los 2 Espejos para reconstruir la cadena
-    de reflexi\xF3n posible de la Zorra)"
-  correctAnswer: {x: 1, y: 3}
-  availableMirrors: 2
+  puzzleDescription: "Acertijo 3 (Dif\xEDcil): Misterio final"
+  correctAnswer: {x: 3, y: 3}
+  availableMirrors: 3
   availableSofas: 1
   availableCameras: 0
   availableLamps: 0
   availablePlants: 0
   availableFans: 0
-  structuralWalls:
-  - {x: 0, y: 2}
-  - {x: 3, y: 2}
+  structuralWalls: []
   permanentMirrors: []
   permanentCameras: []
   permanentFans: []

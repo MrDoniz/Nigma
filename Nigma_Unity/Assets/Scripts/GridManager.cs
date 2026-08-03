@@ -32,7 +32,7 @@ namespace Nigma.Core
             GenerateGrid();
         }
 
-        private void GenerateGrid()
+        public void GenerateGrid()
         {
             grid = new GridNode[width, height];
             Vector3 originPosition = transform.position;
@@ -55,6 +55,7 @@ namespace Nigma.Core
 
         public void ClearGrid()
         {
+            if (grid == null) GenerateGrid();
             for (int x = 0; x < width; x++)
             {
                 for (int y = 0; y < height; y++)
@@ -76,6 +77,7 @@ namespace Nigma.Core
 
         public void SpawnStructuralWall(int x, int y)
         {
+            if (grid == null) GenerateGrid();
             if (IsValidNode(x, y))
             {
                 grid[x, y].isStructuralWall = true;
@@ -93,6 +95,7 @@ namespace Nigma.Core
         /// </summary>
         public Vector3 GetWorldPosition(int x, int y)
         {
+            if (grid == null) GenerateGrid();
             if (IsValidNode(x, y))
             {
                 return grid[x, y].worldPosition;
@@ -125,10 +128,10 @@ namespace Nigma.Core
             return node.occupant != null || node.isStructuralWall;
         }
 
-        // Draw grid gizmos in editor for visualization
-        private void OnDrawGizmos()
+        // Draw grid gizmos in editor only when selected
+        private void OnDrawGizmosSelected()
         {
-            Gizmos.color = Color.white;
+            Gizmos.color = new Color(1f, 1f, 1f, 0.3f);
             Vector3 originPosition = transform.position;
 
             for (int x = 0; x < width; x++)

@@ -1,0 +1,5 @@
+C:/Users/Danie/Documents/GitHub/nigma/Nigma_Unity/.utmp/RelWithDebInfo/fu4i9145/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Danie/Documents/GitHub/nigma/Nigma_Unity/.utmp/RelWithDebInfo/fu4i9145/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Danie/Documents/GitHub/nigma/Nigma_Unity/.utmp/RelWithDebInfo/fu4i9145/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Danie/Documents/GitHub/nigma/Nigma_Unity/.utmp/RelWithDebInfo/fu4i9145/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Danie/Documents/GitHub/nigma/Nigma_Unity/.utmp/RelWithDebInfo/fu4i9145/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

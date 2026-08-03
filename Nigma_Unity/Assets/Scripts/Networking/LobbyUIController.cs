@@ -66,7 +66,15 @@ namespace Nigma.Networking
 
         private void Start()
         {
-            ShowPanel(panelMain);
+            if (GetComponent<Nigma.UI.MainMenuUIController>() == null)
+            {
+                ShowPanel(panelMain);
+            }
+            else
+            {
+                // Ensure panels are bound but don't force them active if MainMenu handles it
+            }
+            
             BindButtons();
             SubscribeToLobbyEvents();
 
@@ -76,6 +84,16 @@ namespace Nigma.Networking
                 inputRoomCode.characterLimit = 4;
                 inputRoomCode.onValueChanged.AddListener(OnRoomCodeInputChanged);
             }
+
+            // Add juice animation
+            if (btnCreateRoom != null) btnCreateRoom.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnJoinRoom != null) btnJoinRoom.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnModeAgencias != null) btnModeAgencias.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnModePolicia != null) btnModePolicia.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnStartGame != null) btnStartGame.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnLeaveHost != null) btnLeaveHost.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnConfirmJoin != null) btnConfirmJoin.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
+            if (btnLeaveClient != null) btnLeaveClient.gameObject.AddComponent<Nigma.Core.ButtonJuice>();
 
             // Default game mode: Agencias Rivales
             UpdateModeButtonVisuals("AgenciasRivales");

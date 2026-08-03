@@ -46,6 +46,13 @@ namespace Nigma.Core
             safeManager   = FindObjectOfType<SafeManager>();
             if (uiManager == null) uiManager = UIManager.Instance;
 
+            if (levels == null || levels.Count == 0)
+            {
+                levels = new System.Collections.Generic.List<LevelData>(UnityEngine.Resources.LoadAll<LevelData>(""));
+                levels.Sort((a, b) => a.levelID.CompareTo(b.levelID));
+                UnityEngine.Debug.Log($"[Nigma] Auto-cargados {levels.Count} niveles desde Resources.");
+            }
+
             LoadLevel(currentLevelIndex);
         }
 
@@ -166,6 +173,7 @@ namespace Nigma.Core
 
             uiManager?.ShowVictoryPanel(true);
             uiManager?.UpdateFeedbackText(victoryMsg);
+            Nigma.Core.AudioManager.Instance?.PlayStampThump();
         }
 
         #endregion

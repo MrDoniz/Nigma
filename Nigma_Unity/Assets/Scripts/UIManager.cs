@@ -42,7 +42,11 @@ namespace Nigma.Core
 
         public void UpdatePuzzleText(string text)
         {
-            if (puzzleTextUI != null) puzzleTextUI.text = text;
+            if (puzzleTextUI != null)
+            {
+                puzzleTextUI.text = text;
+                Nigma.Core.AudioManager.Instance?.PlayPaperRustle();
+            }
         }
 
         public void UpdateFeedbackText(string text)

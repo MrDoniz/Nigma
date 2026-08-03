@@ -1,5 +1,5 @@
 # 🗺️ Roadmap y Tracker de Proyecto: NIGMA (Visual Murdoku)
-*Documento de Gestión de Proyecto (PM) - Actualizado: 01/08/2026 — Fase 4 completada*
+*Documento de Gestión de Proyecto (PM) - Actualizado: 01/08/2026 — Fases 1 a 5 completadas*
 
 Este documento actúa como la hoja de ruta central para el desarrollo de Nigma, el juego de deducción lógica visual.
 
@@ -41,8 +41,8 @@ Este documento actúa como la hoja de ruta central para el desarrollo de Nigma, 
 - [x] Programar el Modo **"Policía Corrupto"** (Distribución de pistas asimétrica a diferentes clientes).
   - `PoliciaCorruptoMode.cs`: rol oculto, pistas falsas procedurales, votación via RPC.
 
-## Fase 5: Monetización (Freemium), Pulido y Lanzamiento
-- [ ] Implementar In-App Purchases (Pago único de 4.99€ para desbloquear Premium).
-- [ ] Configurar los muros de pago (Campaña de 20 niveles y Caso Diario = Gratis; Roguelite Infinito y Multijugador = Premium).
-- [ ] Game Feel y ASMR: Pulir los efectos de sonido táctiles (papel, sellos, piezas de madera).
-- [ ] Compilación final (Builds) para Itch.io / Steam / Stores móviles.
+## Fase 5: Monetización (Freemium), Pulido y Lanzamiento ✅
+- [x] Implementar In-App Purchases (Pago único de 4.99€ para desbloquear Premium).
+- [x] Configurar los muros de pago (Campaña de 20 niveles y Caso Diario = Gratis; Roguelite Infinito y Multijugador = Premium).
+- [x] Game Feel y ASMR: Pulir los efectos de sonido táctiles (papel, sellos, piezas de madera).
+- [x] Compilación final (Builds) para Itch.io / Steam / Stores móviles.
